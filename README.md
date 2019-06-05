@@ -27,4 +27,4 @@ Result:
     
 P.S.
 
-Names of created inputs are generated upon change. If you add four images they will be the names: file-0 file-1 file-2 file-3. If you delete one of the images, the names will be regenerated.
+Names of created inputs are generated upon change. If you add four images inputs will be the names: file-0 file-1 file-2 file-3. If you delete one of the images, the names will be regenerated.
