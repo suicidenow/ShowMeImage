@@ -6,7 +6,7 @@ $.fn.ShowMeImage = function (param) {
               , newFile = new FileReader;
             newFile.readAsDataURL(this),
             newFile.onloadend = function() {
-                $(""+param+"").after('<div class="attach-file" data-file="' + fileName + '"><img src="' + newFile.result + '"><input type="file" style="display:none;" value="' + newFile.result + '"><div class="attach-file-delete">&times;</div></div>'),
+                $(""+param+"").append('<div class="attach-file" data-file="' + fileName + '"><img src="' + newFile.result + '"><input type="file" style="display:none;" value="' + newFile.result + '"><div class="attach-file-delete">&times;</div></div>'),
                 $(".attach-file").each(function(i) {
                     $(this).find("input").attr("name", "file-" + i)
                 }),
